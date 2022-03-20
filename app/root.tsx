@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
-import styles from "./styles/app.css"
+import styles from "~/distStyles/app.css"
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",

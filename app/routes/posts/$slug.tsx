@@ -15,6 +15,10 @@ export const loader: LoaderFunction = async ({
 export default function PostSlug() {
   const post = useLoaderData<Post & { html: string }>();
   return (
-    <main dangerouslySetInnerHTML={{ __html: post.html }} />
+    <main>
+      <div className="post-screen__card">
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
+    </main>
   );
 }
