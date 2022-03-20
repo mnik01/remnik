@@ -2,14 +2,12 @@ import { json, Link, useLoaderData, Outlet } from "remix";
 
 import { getPosts } from "~/apis/post.server";
 import type { Post } from "~/apis/post.server";
-import adminStyles from "~/styles/admin.css";
 
 
 export const loader = async () => {
   return json(await getPosts());
 };
 
-export const links = () => [{ rel: "stylesheet", href: adminStyles }];
 
 
 export default function Admin() {
