@@ -7,9 +7,9 @@ import {
 } from "remix";
 import invariant from "tiny-invariant";
 
-import { createPost } from "~/post.server";
+import { createPost } from "~/apis/post.server";
 import type { ActionFunction } from "remix";
-import type { NewPostErrors } from "~/post.server";
+import type { NewPostErrors } from "~/apis/post.server";
 
 
 export const action: ActionFunction = async ({ request }) => {

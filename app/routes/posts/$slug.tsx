@@ -2,8 +2,8 @@ import { json, useLoaderData } from "remix";
 import type { LoaderFunction } from "remix";
 import invariant from "tiny-invariant";
 
-import { getPost } from "~/post.server";
-import type { Post } from "~/post.server";
+import { getPost } from "~/apis/post.server";
+import type { Post } from "~/apis/post.server";
 
 export const loader: LoaderFunction = async ({
   params,
