@@ -13,6 +13,9 @@
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/distStyles/app.css"
   },
   "dependencies": {
+    "@mantine/core": "^4.0.7",
+    "@mantine/hooks": "^4.0.7",
+    "@mantine/ssr": "^4.0.7",
     "@remix-run/react": "^1.3.2",
     "@remix-run/serve": "^1.3.2",
     "add": "^2.0.6",
@@ -22,6 +25,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remix": "^1.3.2",
+    "tabler-icons-react": "^1.39.0",
     "tiny-invariant": "^1.2.0"
   },
   "devDependencies": {
